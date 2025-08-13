@@ -1,1 +1,3 @@
 # DSproject
+
+This project is a data science pipeline for automatic license plate recognition (ALPR) from video footage. We used a multi-stage approach, starting with YOLOv5 to detect cars in video frames. The detected car images were then fed into a fine-tuned YOLOv5 model, specifically trained on a supervised dataset from Kaggle, to identify and locate license plates. Finally, an Optical Character Recognition (OCR) model was applied to the cropped license plate images to translate the plate numbers into text. The final output is a video with bounding boxes over cars and their license plates, with the recognized plate numbers displayed as text. This project demonstrates a robust solution for object detection and character recognition in real-world scenarios.
